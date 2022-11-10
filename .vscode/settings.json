@@ -1,0 +1,7 @@
+{
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "nuxt.isNuxtApp": false,
+  "cSpell.words": [
+    "evento"
+  ]
+}
