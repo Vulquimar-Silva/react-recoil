@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import style from './Formulario.module.scss';
 import useAdicionarEvento from '../../state/hooks/useAdicionarEvento';
+import style from './Formulario.module.scss';
 
 const Formulario: React.FC = () => {
 
@@ -19,7 +19,6 @@ const Formulario: React.FC = () => {
 
   const submeterForm = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-
     try {
       const evento = {
         descricao,
@@ -36,8 +35,6 @@ const Formulario: React.FC = () => {
     } catch (erro) {
       alert(erro)
     }
-
-
   }
   return (<form className={style.Formulario} onSubmit={submeterForm}>
     <h3 className={style.titulo}>Novo evento</h3>

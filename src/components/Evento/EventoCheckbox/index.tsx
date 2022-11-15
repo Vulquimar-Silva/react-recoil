@@ -11,7 +11,6 @@ const EventoCheckbox: React.FC<{ evento: IEvento }> = ({ evento }) => {
       ...evento
     }
     eventoAlterado.completo = !eventoAlterado.completo
-
     atualizarEvento(eventoAlterado)
   }
   
@@ -21,7 +20,7 @@ const EventoCheckbox: React.FC<{ evento: IEvento }> = ({ evento }) => {
     evento.completo ? 'fa-check-square' : 'fa-square'
   ]
 
-  return (<i className={estilos.join(' ')} onClick={alterarStatus} />)
+  return (<i className={estilos.join(' ')} onClick={alterarStatus}></i>)
 }
 
 export default EventoCheckbox
