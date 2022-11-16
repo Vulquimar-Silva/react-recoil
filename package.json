@@ -26,6 +26,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "api": "json-server --watch db.json -p 8080",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
